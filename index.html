@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./style.css" />
     <title>What's My Name Again</title>
   </head>
   <body>
-    <h1>If you have bad memory like me, this is the site for you!</h1>
+    <script src="script.js"></script>
+    <h1>Did You Forget Your Name?</h1>
+    <h3>Dont worry we know your name!</h3>
+    <h4>Click the button and we will tell you</h4>
+
+    <div>
+        <button onclick="hideUnhide('paragraph1')">Click for your name!</button>
+        <p id="paragraph1">
+            <img 
+                src="https://thumbs.dreamstime.com/b/sad-face-196916786.jpg"
+                alt="frowny-face"
+                width="100"
+                height="100"
+            
+            />
+                Sorry We Don't Know Your Name
+            <img 
+                src="https://thumbs.dreamstime.com/b/sad-face-196916786.jpg"
+                alt="frowny-face"
+                width="100"
+                height="100"
+            
+            />
+        </p>
+        <script>
+            function hideUnhide(id) {
+                const p1 = document.getElementById(id);
+                if(p1.style.display == "none") {
+                    p1.style.display = "block";
+                }
+                else {
+                    p1.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <img 
+        src="https://static.vecteezy.com/system/resources/previews/003/475/012/original/confused-man-with-question-mark-concept-flat-illustration-free-vector.jpg"
+        alt="confused"
+        width="600"
+        height="600"
+    />
+    
   </body>
+  <footer>
+
+    While some of us may struggle to remember everyday things like birthdays and anniversery's. It is not common to forget your own name.
+    if you are forgetting who you are we recommend you seek medical advice attentively.
+
+  </footer>
 </html>
